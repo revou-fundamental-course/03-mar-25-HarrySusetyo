@@ -29,33 +29,129 @@
 
     <!-- main content -->
     <main>
+
+
+          <!-- Main Home -->
         <section id="home">
             <header>
-
+                <h1>Hai <span id="name"></span>, welcome to my website</h1>
+                <p>ini adalah latihan pertama</p>
             </header>
 
             <!-- Banner Bergerak -->
             <div class="banner-autoslide"></div>
         </section>
 
+        <hr/>
+
         <!-- Our profile -->
         <section id="out-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
             <div class="our-profile"></div>
         </section>
 
+        <hr/>
+
         <!-- Achivment -->
         <section id="achievement">
+            <header>
+                <h1>achievement</h1>
+            </header>
             <div class="achievement"></div>
         </section>
 
+        <hr/>
+
         <!-- Message us -->
         <section id="message-us">
-            <div class="message-us"></div>
+            <header>
+                <h1>meassage us</h1>
+            </header>
+            <div>
+                <form name="meassage-form" onsubmit="return validatefrom()">
+                    <div class="input-message-us">
+                        <div>
+                            <label for="txtname">Nama :</label>
+                            <input type="text" class="position-txtname-and-txtpesan" id="txtname" name="txtname" placeholder="isi nama anda" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="bdate">tanggal lahir :</label>
+                            <input type="date" class="position-bdate" id="bdate" name="bdate" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label>jenis kelamin :</label>
+                            <input type="radio" name="gender" id="male" value="male">
+                            <label for="male">laki - laki</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                            <label for="female">perempuan</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="txtpesan">pesan :</label>
+                            <input type="text" class="position-txtname-and-txtpesan" id="txtpesan" name="txtpesan" placeholder="pesan anda" required>
+                            <!-- <input type="text" id="txtpesan" name="txtpesan" placeholder="pesan anda" required> -->
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="submit">
+                        </div>
+                    </div>
+                </form>
+            <!-- <div class="input-message-us">
+                <div>
+                    <label for="txtname">Nama :</label>
+                    <input type="text" class="position-txtname-and-txtpesan" id="txtname" name="txtname" placeholder="isi nama anda" required>
+                </div>
+                <br>
+                <div>
+                    <label for="bdate">tanggal lahir :</label>
+                    <input type="date" class="position-bdate" id="bdate" name="bdate" required>
+                </div>
+                <br>
+                <div>
+                    <label>jenis kelamin :</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">laki - laki</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">perempuan</label>
+                </div>
+                <br>
+                <div>
+                    <label for="txtpesan">pesan :</label>
+                    <input type="text" class="position-txtname-and-txtpesan" id="txtpesan" name="txtpesan" placeholder="pesan anda" required>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="submit">
+                </div>
+            </div> -->
+            <div class="output-message-us">
+                <p>nama : <span id="input-name"></span></p>
+                <p>tanggal lahir : <span id="input-birthday"></span></p>
+                <p>jenis kelamin : <span id="input-gender"></span></p>
+                <p>pesan : <span id="input-pesan"></span></p>
+            </div>
+        </div>
         </section>
+
+        <!-- Progress bar -->
+        <div class="main-progress-bar">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>  
+        </div>
     </main>
 
     <!-- main footer -->
-    <footer></footer>
+    <footer style="text-align: center;">
+        <p>ini adalah potofolio harry susetyo</p>
+    </footer>
     
+    <script src="js\script.js"></script>
+
 </body>
 </html>
