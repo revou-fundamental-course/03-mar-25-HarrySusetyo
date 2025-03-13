@@ -61,3 +61,29 @@ function setsenderui(name, birthday, gender, pesan){
   document.getElementById("input-gender").innerHTML = gender;
   document.getElementById("input-pesan").innerHTML = pesan;
 }
+
+// Membuat banner slide
+
+let imageindex = 0;
+showimageauto();
+
+function nextimage() {
+    imageindex += 1;
+    showimageauto();
+}
+
+function showimageauto() {
+    const banners = document.getElementsByClassName('autoslide-image');
+
+    if (imageindex >= banners.length) {
+        imageindex = 0;
+    }
+
+    for (let i = 0; i < banners.length; i++) {
+        banners[i].style.display = 'none';
+    }
+
+    banners[imageindex].style.display = 'block';
+}
+
+setInterval(nextimage, 2500);
